@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Vazirmatn, sans-serif;
+}
+ul>li{
+    list-style-type: none;
+    padding-bottom:4px ;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+.lightprimary{
+    background-color: rgba(0, 173, 182,0.1);
+    border-radius: 5px;
+}
+.lemon{
+    background-color: rgba(154, 222, 69,0.1);
+    border-radius: 5px;
+
+}
+.earthpic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right:30px ; */
+}
+.hamidi .row .card .card-body .mrhamidi.d-flex.align-items-center img{
+    width: 40px;
+    border-radius: 50%;
+}
