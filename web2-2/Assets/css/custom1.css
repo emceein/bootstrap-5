@@ -1,0 +1,72 @@
+body{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+ul{
+    list-style-type: none;
+}
+footer{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contact__title-description .contact__title_number-box {
+display: flex;
+align-items: center;
+gap: 38px;
+margin-bottom: 40px;
+}
+.destination__title-form{
+padding: 60px 40px;
+border: 1px solid #EEEEEE;
+}
+.destination__title-form textarea{
+/* display: flex; */
+width: 99%;
+height: 120px !important;
+margin-top: 50px;
+border-bottom: 1px solid #EEEEEE;
+}
+.destination__title-form form input{
+border-bottom: 1px solid #EEEEEE;
+padding: 20px 0;
+width: 48%;
+margin-right: 20px;
+}
+.destination__title-form form input:last-child{
+margin-right: 0;
+border-bottom: 1px solid #EEEEEE;
+padding: 20px 0;
+width: 48%;
+}
+.contact__title-info .contact-number-icon i.icon{
+width: 80px;
+height: 80px;
+line-height: 70px;
+text-align: center;
+background: #FFFFFF;
+color: black;
+font-size: xxx-large;
+}
+.contact__title-info .contact-number-icon ul{
+align-items: center;
+}
+.destination__tiltle .destination__tiltle-img img{
+display: inline-block;
+max-width: 100%;
+width: 100%;
+height: 100%;
+border-radius: 5px;
+}
+@media only screen and (max-width: 1200px){
+.destination__title-form form input{
+width: 100%;
+margin-right: 0px;
+}
+.destination__title-form form input:last-child{
+width: 100%;
+margin-top: 15px;
+}
+}
