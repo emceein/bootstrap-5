@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+</head>
+<body style="font-family: 'Dancing Script', cursive;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto ">
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel">Name</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fw-bold fs-5">
+              Full Name:
+              <input type="text" class="rounded-pill">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel2">Email</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fw-bold fs-5">
+              Enter your email:
+              <input type="email" name="" id="" class="rounded-pill">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Name</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- editedcode -->
+
+      <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel3">Message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center fw-bold fs-5">
+              Write your message:
+              <textarea name="" id="" cols="35" rows="6" class="border-2 border-dark"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Back to Email</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+      <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel4">Are You Sure?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fw-bold fs-5">
+              Are you sure about registering your message?
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-danger" data-bs-dismiss="modal" data-bs-toggle="modal">No</button>
+              <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bolder" id="exampleModalToggleLabel5">The Message was sent</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fw-bold fs-5">
+              Thank you for sending your message
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary text-black" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Close</button>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Thank You</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas modal" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body fs-3">
+                  <p>your Message has been sent and we will answer it soon</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <a class="btn btn-lg btn-outline-warning" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Send Message</a>
+
+    </div>
+</div>
+</div>
+    
+    
+    
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
